@@ -26,12 +26,8 @@ public class CadastroActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mDatabase = FirebaseDatabase.getInstance().getReference();
         binding.btnCadastro.setOnClickListener(v -> validaDados());
-        binding.textRecuperaConta.setOnClickListener(v -> {
-            startActivity(new Intent(this, RecuperaActivity.class));
-        });
-        binding.textLogue.setOnClickListener( v -> {
-            startActivity(new Intent(this, LoginActivity.class));
-        });
+        binding.textRecuperaConta.setOnClickListener(v -> startActivity(new Intent(this, RecuperaActivity.class)));
+        binding.textLogue.setOnClickListener( v -> startActivity(new Intent(this, LoginActivity.class)));
     }
 
     private void validaDados() {

@@ -13,9 +13,12 @@
         android:theme="@style/Theme.IFTools"
         tools:targetApi="31">
         <activity
+            android:name=".EditaActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false"
-            android:parentActivityName=".CadastroActivity"/>
+            android:parentActivityName=".CadastroActivity" />
         <activity
             android:name=".RecuperaActivity"
             android:exported="false"

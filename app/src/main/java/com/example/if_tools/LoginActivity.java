@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(this, MainActivity.class));
             } else {
                 binding.progressBar3.setVisibility(View.GONE);
-                Toast.makeText(this, "Falha na criação da conta: ", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Falha no login ", Toast.LENGTH_SHORT).show();
             }
         });
     }
